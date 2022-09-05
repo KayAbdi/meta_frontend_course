@@ -1,0 +1,36 @@
+.parent {
+    border: 4px solid red;
+}
+
+.child {
+    width: 50%;
+    padding: 20px;
+    border: 4px solid green;
+    margin: auto;
+}
+
+.parent1 {
+    border: 4px solid yellow;
+    margin-top: 20px;
+}
+
+/* to align an img you must display it as block first */
+.child1 {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* floating an elemnt */
+/* .parent2 {
+    border: 4px solid black;
+    margin-top: 20px;
+} */
+
+.parent2 p {
+    max-width: 50%;
+}
+.child2 {
+    float: right;
+}
