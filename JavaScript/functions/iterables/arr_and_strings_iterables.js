@@ -27,3 +27,5 @@ for(var i = 0; i < greeting.length; i++){
 //but strings are not arrays thus you can't use array methods such as pop() and push() on strings 
 var greet = 'Hello';
 // greet.pop(); won't work here
+
+"ho-ho-ho".split("-"); // ['ho', 'ho', 'ho']
