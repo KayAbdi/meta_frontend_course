@@ -10,3 +10,14 @@ function convertCurrency(amount, rate){
 
 currencyTwo = convertCurrency(currencyOne, exchangeRate);
 console.log(currencyTwo);
+
+// recursion
+
+var counter = 5;
+function example(){
+    console.log(counter);
+    counter--;
+    if (counter === 0) return;
+    example();
+};
+example();
