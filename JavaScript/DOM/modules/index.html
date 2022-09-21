@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Script</title>
+</head>
+<body style="background-color: black;">
+    Regular "Old school" JS script. 
+    <script type="text/javascript">
+        console.log('Hello from script tag');
+    </script>
+    <script>
+        console.log('The text/javascript is the default value.');
+        console.log('So we don not even need to specify it!!');
+    </script>
+
+    JS script as es6 modules:
+    <script type="module">
+        import { informalGreeting } from './greetings.js';
+        informalGreeting('Faarax');
+    </script>
+    <script type="module">
+        import { informalGreeting, formalGreeting }  from './greetings.js';
+        import greeting from './greetings.js';
+        formalGreeting('Xaliimo');
+        greeting();
+    </script>
+</body>
+</html>
