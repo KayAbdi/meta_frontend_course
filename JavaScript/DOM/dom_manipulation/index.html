@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Content Update</title>
+</head>
+<body>
+    <script>
+        // let answer = prompt('What is your name?');
+        // if (typeof(answer) === 'string') {  
+        //     var h1 = document.createElement('h1');
+        //     h1.setAttribute('id', 'heading')
+        //     let styles = `red`;
+        //     h1.style.color = styles;
+        //     h1.innerText = answer;
+        //     document.body.innerText = '';
+        //     document.body.appendChild(h1);
+        // }
+
+        var h1 = document.createElement('h1')
+        h1.innerText = "Type into the input to make this text change"
+
+        var input = document.createElement('input')
+        input.setAttribute('type', 'text');
+        var div = document.createElement('div');
+        div.innerText = '';
+
+        document.body.innerText = '';
+        document.body.appendChild(h1);
+        document.body.appendChild(input);
+        document.body.appendChild(div);
+        input.addEventListener('change', function() {
+            div.innerText += ' ' + input.value;
+        })
+    </script>
+</body>
+</html>
